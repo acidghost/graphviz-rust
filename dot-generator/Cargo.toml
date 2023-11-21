@@ -7,4 +7,4 @@ license = "MIT"
 description = "the set of macros to generate dot files"
 
 [dependencies]
-dot-structures = { path = "../dot-structures", version = "0.1.0" }
+dot-structures = { workspace = true }

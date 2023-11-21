@@ -12,8 +12,8 @@ description = "derive for attributes for graphviz-rust lib"
 proc-macro = true
 
 [dependencies]
-dot-generator = "0.2.0"
-dot-structures = "0.1.1"
-into-attr = "0.1.1"
+dot-generator = { workspace = true }
+dot-structures = { workspace = true }
+into-attr = { workspace = true }
 quote = "1.0"
 syn = "1.0"

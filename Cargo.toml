@@ -1,3 +1,17 @@
+[workspace]
+members = [
+    "dot-generator",
+    "dot-structures",
+    "into-attr",
+    "into-attr-derive",
+]
+
+[workspace.dependencies]
+dot-structures = { path = "dot-structures", version = "0.1.1" }
+dot-generator = { path = "dot-generator", version = "0.2.0" }
+into-attr = { path = "into-attr", version = "0.1.1" }
+into-attr-derive = { path = "into-attr-derive" }
+
 [package]
 name = "graphviz-rust"
 version = "0.6.6"
@@ -13,12 +27,11 @@ repository = "https://github.com/besok/graphviz-rust"
 description = "The library provides the basic access to the graphs in graphviz format with ability to import into or export from it."
 
 [dependencies]
-dot-generator = "0.2.0"
-dot-structures = "0.1.1"
-into-attr = "0.1.1"
-into-attr-derive = "0.2.1"
+dot-generator = { workspace = true }
+dot-structures = { workspace = true }
+into-attr = { workspace = true }
+into-attr-derive = { workspace = true }
 pest = "2.0"
 pest_derive = "2.0"
 rand = "0.8.4"
 tempfile = "3.2.0"
-[dev-dependencies]

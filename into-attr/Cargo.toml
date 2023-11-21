@@ -7,4 +7,4 @@ license = "MIT"
 description = "the macros helping to transform attributes in graphviz-rust library"
 
 [dependencies]
-dot-structures = "0.1.1"
+dot-structures = { workspace = true }
